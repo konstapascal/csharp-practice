@@ -8,6 +8,7 @@ namespace cs_practice
 		private static void Main(string[] args)
 		{
 			Console.WriteLine("Hello World!");
+			Separator();
 
 			List<string> list = new List<string> { "apple", "banana" };
 			Dictionary<char, short> map = new() { { 'A', 3 }, { 'B', 3 }, { 'C', 3 } };
@@ -16,11 +17,17 @@ namespace cs_practice
 			{
 				Console.WriteLine(el);
 			}
+			Separator();
 
 			foreach (KeyValuePair<char, short> entry in map)
 			{
 				Console.WriteLine($"{entry.Key}: {entry.Value}");
 			}
+		}
+
+		private static void Separator()
+		{
+			Console.WriteLine("-----------------");
 		}
 	}
 }
