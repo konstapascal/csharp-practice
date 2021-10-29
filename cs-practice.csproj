@@ -3,7 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>cs_practice</RootNamespace>
+    <RootNamespace>csharp_practice</RootNamespace>
+    <AssemblyName>csharp-practice</AssemblyName>
   </PropertyGroup>
 
 </Project>
