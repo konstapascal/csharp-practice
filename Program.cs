@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace cs_practice
+namespace csharp_practice
 {
-	internal class Program
+	internal class Program : StringPractice
 	{
 		private static void Main(string[] args)
 		{
@@ -25,35 +25,9 @@ namespace cs_practice
 
 			//Array.ForEach(strArr, (el) => Console.WriteLine(el));
 
-			StringManipulation();
-		}
+			StringConcatination();
 
-		private static void StringManipulation()
-		{
-			Stopwatch stopwatch = new();
-			Stopwatch sb_stopwatch = new();
-
-			StringBuilder sb = new();
-
-			sb_stopwatch.Start();
-			for (int i = 0; i < 100_000; i++)
-			{
-				sb.Append(i);
-			}
-			sb_stopwatch.Stop();
-
-			Console.WriteLine($"StringBuilder concatination method took {sb_stopwatch.ElapsedMilliseconds} ms");
-
-			string str = "";
-
-			stopwatch.Start();
-			for (int i = 0; i < 100_000; i++)
-			{
-				str += i;
-			}
-			stopwatch.Stop();
-
-			Console.WriteLine($"Classic string concatination method took {stopwatch.ElapsedMilliseconds} ms");
+			Console.ReadLine();
 		}
 	}
 }

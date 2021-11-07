@@ -3,7 +3,7 @@
 // The searchPhrease can be anywhere inside the entry.
 // Your searches should ignore casing.
 
-public static int FindMatchCount(List<string> data, string searchPhrase)
+int FindMatchCount(List<string> data, string searchPhrase)
 {
 	if (searchPhrase == "") return 0;
 

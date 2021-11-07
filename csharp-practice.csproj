@@ -6,7 +6,6 @@
     <RootNamespace>csharp_practice</RootNamespace>
     <AssemblyName>csharp-practice</AssemblyName>
     <Nullable>warnings</Nullable>
-    <StartupObject>csharp_practice.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
